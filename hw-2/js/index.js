@@ -52,10 +52,10 @@ console.log("Является равенством: ", (x+y) * (x-y) === x*x - y
 
 // __________Task1 ***____________
 console.log(" __________Task1***____________")
-let num1 = prompt("input first number for task1*") 
+let num1 = prompt("input first number for task1*")  
 let num2 = prompt("input second number for task1*") 
 let num3 = prompt("input third number for task1*") 
-alert((num1 * 10 + num2 * 10 + num3 * 10))
+alert(+num1 + 10 + +num2 + 10 + +num3 + 10)
 
 // __________Task2 ***____________
 console.log(" __________Task2***____________")
