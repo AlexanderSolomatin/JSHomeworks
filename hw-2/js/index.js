@@ -46,12 +46,9 @@ console.log("Третий способ:", a /= 1)
 
 // __________Task6____________
 console.log(" __________Task6____________")
-let x = 2
-let y = 2
-console.log("Является равенством: ", (x+y)*(x-y) === x*x - y*y)
-x = 28
-y = 12
-console.log("Является равенством: ", (x+y)*(x-y) === x*x - y*y)
+let x = Math.floor(Math.random()*(100-1)+1)
+let y = Math.floor(Math.random()*(100-1)+1)
+console.log("Является равенством: ", (x+y) * (x-y) === x*x - y*y)
 
 // __________Task1 ***____________
 console.log(" __________Task1***____________")
@@ -69,12 +66,8 @@ console.log(sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > si
 
 // __________Task3 ***____________
 console.log(" __________Task3***____________")
-let xCub = 4
-let yCub = 6
-console.log("Является равенством: ",(xCub + yCub) ** 3 === xCub ** 3 + 3 * xCub ** 2 * yCub + 3 * xCub * yCub ** 2 + yCub**3)
-xCub = 5085
-yCub = 1001
-console.log("Является равенством: ",(xCub + yCub) ** 3 === xCub ** 3 + 3 * xCub ** 2 * yCub + 3 * xCub * yCub ** 2 + yCub**3)
-
+let xCub = Math.floor(Math.random()*(100-1)+1)
+let yCub = Math.floor(Math.random()*(100-1)+1)
+console.log("Является равенством: ", (xCub + yCub) ** 3 === xCub ** 3 + 3 * xCub ** 2 * yCub + 3 * xCub * yCub ** 2 + yCub**3)
 
 
