@@ -49,7 +49,8 @@ console.log(" __________Task6____________")
 let x = Math.floor(Math.random()*(100-1)+1)
 let y = Math.floor(Math.random()*(100-1)+1)
 let left = (x+y) * (x-y)
-let right = (x+y) * (x-y)
+let right = x ** 2 - y ** 2
+console.log("Left part = right part", left === right)
 console.log("Разность квадратов чисел: ", left, "=", right)
 
 // __________Task1 ***____________
@@ -72,6 +73,7 @@ let xCub = Math.floor(Math.random()*(100-1)+1)
 let yCub = Math.floor(Math.random()*(100-1)+1)
 let leftCub = (xCub + yCub) ** 3
 let rightCub = xCub ** 3 + 3 * xCub ** 2 * yCub + 3 * xCub * yCub ** 2 + yCub**3
+console.log("Left part = right part", leftCub === rightCub)
 console.log("Куб суммы чисел: ", leftCub, "=", rightCub)
 
 
