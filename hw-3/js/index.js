@@ -1,9 +1,9 @@
-// // ____________Task1_____________
+// ____________Task1_____________
 console.log('___________Task1____________')
 const number = +prompt("Введите число: ", 10)
 number === 10 ? console.log("Равно") : number > 10 ? console.log("Больше") : console.log("Меньше");
 
-// // ____________Task2_____________
+// ____________Task2_____________
 console.log('___________Task2____________')
 const age = prompt("Введите свой возраст: ", 18)
 if(age >= 18){
@@ -66,27 +66,34 @@ for(;;){
 }
 
 
-// // ____________Task5_____________
+// ____________Task5_____________
 console.log('___________Task5____________')
-for(;;){
+for( ; ; ){
     let checkPassword = prompt("Введите старый пароль", 'password')
     if(checkPassword === password){
-        password = prompt('Введите новый пароль', 'newPassword')
-        if(password == false || password == 'password'){
-            alert("Вы ввели недопустимый пароль")
-            console.log('Вы ввели недопустимый пароль')
-        }
-        else{
-            alert("Пароль успешно изменён")
-            console.log('Пароль успешно изменён')
-            break;
-        }
+        for( ; ; ){
+            password = prompt('Введите новый пароль', 'newPassword')
+            if(password == false || password == 'password'){
+                alert("Вы ввели недопустимый пароль")
+                console.log('Вы ввели недопустимый пароль')
+            }
+            else{
+    
+                alert("Пароль успешно изменён")
+                console.log('Пароль успешно изменён')
+                break;
+            }
+        }        
     } 
     else{
         alert("Вы ввели неверный старый пароль")
         console.log('Вы ввели неверный старый пароль')
     } 
+    if(password !== false && password !== 'password'){
+      break;
+    }
 }
+
     
 // ____________Task6_____________
 console.log('___________Task6____________')
